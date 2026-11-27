@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Digital Fest</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+            <div class="logo">DIGITAL FEST</div>
+            <nav aria-label="Основная навигация">
+                <ul>
+                    <li><a href="#program">Программа</a></li>
+                    <li><a href="#speakers">Спикеры</a></li>
+                    <li><a href="#register">Регистрация</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="hero-content">
+                <h1>Фестиваль цифровых технологий</h1>
+                <p>Создаём будущее вместе!</p>
+                <a href="#register" class="btn">Участвовать</a>
+            </div>
+            <div class="hero-decor">
+                <div class="decor-box"></div>
+            </div>
+        </section>
+
+        <section id="program">
+            <h2>Программа</h2>
+            <div class="cards">
+                <article class="card"><h3>Веб-дизайн</h3><p>Макеты и UX</p></article>
+                <article class="card"><h3>Разработка</h3><p>HTML и CSS</p></article>
+                <article class="card"><h3>Медиа</h3><p>Творческие проекты</p></article>
+                <article class="card"><h3>ИИ</h3><p>Нейросети</p></article>
+                <article class="card"><h3>Кибербезопасность</h3><p>Защита данных</p></article>
+                <article class="card"><h3>Мобильная разработка</h3><p>iOS и Android</p></article>
+            </div>
+        </section>
+
+        <section id="speakers">
+            <h2>Спикеры</h2>
+            <div class="cards">
+                <article class="card"><h3>Иван Иванов</h3><p>Frontend-разработчик</p></article>
+                <article class="card"><h3>Анна Петрова</h3><p>UI/UX Дизайнер</p></article>
+                <article class="card"><h3>Сергей Смирнов</h3><p>Data Scientist</p></article>
+            </div>
+        </section>
+
+        <section id="register">
+            <h2>Регистрация</h2>
+            <form action="#" method="POST">
+                <div>
+                    <label for="name">Ваше имя:</label>
+                    <input type="text" id="name" name="name" required placeholder="Иван">
+                </div>
+                
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="test@test.ru">
+                </div>
+                
+                <div>
+                    <label for="direction">Направление:</label>
+                    <select id="direction" name="direction">
+                        <option value="web">Веб-дизайн</option>
+                        <option value="dev">Разработка</option>
+                        <option value="media">Медиа</option>
+                    </select>
+                </div>
+                
+                <div>
+                    <input type="checkbox" id="agree" name="agree" required>
+                    <label for="agree">Согласен с обработкой данных</label>
+                </div>
+                
+                <button type="submit" class="btn">Отправить</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-grid">
+            <div>
+                <h3>DIGITAL FEST</h3>
+                <p>Фестиваль цифровых технологий.</p>
+            </div>
+            <div>
+                <h3>Навигация</h3>
+                <ul>
+                    <li><a href="#program">Программа</a></li>
+                    <li><a href="#speakers">Спикеры</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Контакты</h3>
+                <p>test@digitalfest.ru</p>
+                <p>+7 (999) 123-45-67</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js" defer></script>
+</body>
+</html>
